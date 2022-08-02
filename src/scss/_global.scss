@@ -1,0 +1,26 @@
+body {
+    font-family: $font-family;
+    color: $black;
+}
+.container {
+    padding-left: $sp-24;
+    padding-right: $sp-24;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title__box{
+    font-family: $font-family;
+    h1 {
+        font-weight: 700;
+        font-size: $sp-40;
+        margin-bottom: $sp-8;
+    }
+    p {
+        font-weight: 300;
+        font-size: $sp-16;
+        margin: 0;
+    }
+}

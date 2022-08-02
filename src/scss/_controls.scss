@@ -1,0 +1,42 @@
+.controls {
+    border: 1px solid $gray-light-400;
+    border-radius: 15px;
+    margin-bottom: $sp-32;
+    &__title {
+        background-color: $orange-300;
+        text-align: center;
+        color: $white;
+        padding: $sp-16 0rem;
+        border-radius: 15px 15px 0px 0px;
+        margin-bottom: $sp-32;
+        h2{
+            font-size: $sp-16 + .25;
+            margin-bottom: 0;
+        }
+    }
+}
+.form-group {
+    margin-top: $sp-16;
+    padding: $sp-8 $sp-32;
+    label {
+        font-size: $sp-16 + .25;
+        line-height: 18.75px;
+        margin-bottom: $sp-16;
+        font-weight: 300;
+    }
+    .form-select, .form-control  {
+        font-size: $sp-24;
+        font-weight: 500;
+        margin-bottom: $sp-16;
+    }
+}
+.meses-count {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding-left: 0;
+        font-weight: 300;
+        font-size: $sp-16 + .25;
+    }
+}

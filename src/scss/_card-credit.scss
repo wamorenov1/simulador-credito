@@ -1,0 +1,84 @@
+.card-results {
+    padding: 0rem $sp-16;
+}
+.card-credit {
+    border: 1px solid $gray-light-400;
+    border-radius: 15px;
+    padding: $sp-32;
+    margin-bottom: $sp-16;
+}
+.card-title {
+    h3 {
+        font-weight: 500;
+        font-size: $sp-24;
+        margin-bottom: $sp-8;
+    }
+    p {
+        font-weight: 300;
+        margin-bottom: $sp-4;
+    }
+}
+
+.card-value{
+    font-size: $sp-40;
+    font-weight: 700;
+}
+
+.table {
+    display: table;
+}
+.row-table {
+    display: table-row;
+}
+.cell{
+    display: table-cell;
+    padding: $sp-4;
+    font-weight: 300;
+}
+.cell-bold {
+    font-weight: 700;
+    text-align: right;
+}
+.card-credit-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: $sp-16;
+    padding-bottom: 0px;
+}
+.credit-enlace {
+    color: $orange-300;
+    text-decoration: none;
+    font-weight: 500;
+}
+.credit-enlace:hover {
+    color: $orange-400;
+    text-decoration: none;
+}
+
+.card-credit-message {
+    p {
+        font-weight: 300;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: $black-200;
+    }
+}
+
+.card-credit-button {
+    display: flex;
+    justify-content: end;
+    a {
+        text-decoration: none;
+        color: $orange-300;
+        font-weight: 500;
+    }
+}
+
+@media(max-width:520px) {
+    .card-credit-buttons {
+        flex-direction: column;
+        gap: $sp-16;
+    }
+}

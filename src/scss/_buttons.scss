@@ -1,0 +1,23 @@
+$btn-orange-background: $orange-300;
+$btn-orange-hover: $orange-400;
+$btn-orange-color: $white;
+
+.btn-orange {
+    background-color: $btn-orange-background;
+    color: $btn-orange-color;
+    padding: $sp-8 $sp-40;
+}
+.btn-orange:hover {
+    background-color: $btn-orange-hover;
+    color: $btn-orange-color;
+}
+.btn-orange:active {
+    background-color: $btn-orange-background;
+    color: $btn-orange-color;
+    outline: none;
+}
+.btn-orange:focus{
+    background-color: $btn-orange-background;
+    color: $btn-orange-color;
+    outline: none;
+}

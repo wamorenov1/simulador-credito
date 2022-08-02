@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Simulador de Crédito compensar</title><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PH2VPR3');</script><!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH2VPR3"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav__container">
+          <div class="nav__logo bfix"><img src="./images/LogoCompensar.svg" alt=""></div>
+          <div class="nav__button bfix">
+            <div class="login-button">
+              <div class="login-button__letter flex-center">
+                <p>W</p>
+              </div><a href=""> 
+                <div class="login-button__dropdown"><img src="./images/icon_down.svg" aria-label="Desplegar menú"></div></a>
+              <div class="login-button__status"></div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="container title__box py-4">
+        <h1>Simula tu crédito</h1>
+        <p>Solicita o simula el crédito que más se ajuste a tus necesidades.</p>
+      </section>
+      <section class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="controls">
+              <div class="controls__title">
+                <h2>Simular crédito de libre inversión</h2>
+              </div>
+              <form class="form">
+                <div class="form-group">
+                  <label for="linea-credito">Selecciona la línea de crédito</label>
+                  <select class="form-select" type="text" name="linea-credito" id="linea-credito">
+                    <option>Libre inversión</option>
+                    <option>Educación</option>
+                    <option>Salud</option>
+                    <option>Turismo</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="monto">Preaprobado: <span id="monto-num"> </span></label>
+                  <input class="form-control" type="text" id="monto">
+                  <input class="form-range" type="range" min="0" max="100" step="100000" id="monto-range">
+                </div>
+                <div class="form-group">
+                  <label for="meses">A cuantos meses: </label>
+                  <input class="form-control" type="text" id="meses">
+                  <input class="form-range" type="range" min="0" max="100" step="1" id="meses-range">
+                  <div class="meses-count">
+                    <ul>
+                      <li>12</li>
+                      <li>24</li>
+                      <li>36</li>
+                      <li>48</li>
+                      <li>60</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group flex-center py-4">
+                  <button class="btn btn-orange mb-3" type="button" id="simular-btn">Simular crédito</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-12 col-sm-12">
+            <div class="card-results">
+              <div class="card-credit row">
+                <div class="card-title col-md-6">
+                  <h3>Crédito de libre inversión</h3>
+                  <p>Cuota mensual aproximada </p><span class="card-value" id="card-value">$ 830.000</span>
+                </div>
+                <div class="card-data col-md-6">
+                  <div class="table">
+                    <div class="row-table">
+                      <div class="cell">A cuantos meses</div>
+                      <div class="cell cell-bold">12 Meses</div>
+                    </div>
+                    <div class="row-table">
+                      <div class="cell">Tasa mensual</div>
+                      <div class="cell cell-bold">1.5%</div>
+                    </div>
+                    <div class="row-table">
+                      <div class="cell">Valor cuota sin seguro</div>
+                      <div class="cell cell-bold">$ 825.000</div>
+                    </div>
+                    <div class="row-table">
+                      <div class="cell">Valor seguro</div>
+                      <div class="cell cell-bold">$ 5.000</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-credit-buttons"><a class="btn btn-orange" href="">Solicitar crédito</a><a class="credit-enlace" href="">Ver plan de pagos</a></div>
+              </div>
+              <div class="card-credit-message"> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque aliquet rhoncus eu, imperdiet ut nulla vivamus. Malesuada pharetra id congue id sit donec id tortor orci. Vestibulum imperdiet sodales nunc pharetra nunc porttitor. Diam pretium, rhoncus neque non vitae in blandit etiam sed. Augue condimentum ultrices nunc, lectus id facilisis felis phasellus at. Porttitor sit ultricies commodo at amet, risus a quis dignissim. Ullamcorper nibh aliquet lectus non congue ornare.</p>
+              </div>
+              <div class="card-credit-button"><a href=""> <img src="./images/back-vector.svg" alt="">  Ver todas las ofertas</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa">  </script>
+    <script src="./js/main.js"> </script>
+    <footer> </footer>
+  </body>
+</html>

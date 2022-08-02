@@ -1,0 +1,43 @@
+$size-button: 45px;
+$border-corner: 3rem;
+
+.login-button {
+    display: flex;
+    position: relative;
+    &__letter {
+        background-color: $orange-400;
+        width: $size-button;
+        height: $size-button;
+        color: $white;
+        padding: .6rem;
+        position: absolute;
+        border-radius: $border-corner;
+        p {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+    &__dropdown {
+        padding: .5rem;
+        width: $size-button + 25px;
+        height: $size-button;
+        background-color: $gray-300;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        left: 0px;
+        border-radius: $border-corner;
+        img {
+            width: 15px;
+        }
+    }
+    &__status {
+        background-color: $green-400;
+        position: absolute;
+        padding: .38rem;
+        border-radius: $border-corner;
+        bottom: 0;
+        left: 30px;
+    }
+}

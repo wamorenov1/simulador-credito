@@ -1,0 +1,30 @@
+div(class="controls")
+    div(class="controls__title")
+        h2 Simular crédito de libre inversión
+    form(class="form")
+        div(class="form-group")
+            label(for="linea-credito") Selecciona la línea de crédito
+            select(class="form-select", type="text", name="linea-credito", id="linea-credito")
+                option Libre inversión
+                option Educación
+                option Salud
+                option Turismo
+        div(class="form-group")
+            label(for="monto") Preaprobado: 
+                span(id="monto-num") 
+            input(type="text" class="form-control" id="monto")
+            input(type="range" min="0" max="100" step="100000" class="form-range" id="monto-range")
+        div(class="form-group")
+            label(for="meses") A cuantos meses: 
+            input(type="text" class="form-control" id="meses")
+            input(type="range" min="0" max="100" step="1" class="form-range" id="meses-range")
+            div(class="meses-count")
+                ul
+                    li 12
+                    li 24
+                    li 36
+                    li 48
+                    li 60
+        div(class="form-group flex-center py-4")
+            button(class="btn btn-orange mb-3" type="button" id="simular-btn") Simular crédito
+        
