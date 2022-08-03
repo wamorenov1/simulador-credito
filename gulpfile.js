@@ -3,7 +3,6 @@ const sass = require('gulp-sass')(require('sass'));
 const pug = require('gulp-pug');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
-const babel = require('gulp-babel');
 const production = false; 
 
 gulp.task('views', () => {
@@ -29,6 +28,7 @@ gulp.task('imageop', () => {
     .pipe(imagemin())
     .pipe(gulp.dest('./public/images'))
 })
+
 
 gulp.task('default', () => {
     gulp.watch('./src/views/**/*.pug', gulp.series('views'))

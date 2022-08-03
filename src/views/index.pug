@@ -4,7 +4,7 @@ html(lang="es")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous")
         link(rel="stylesheet", href="./css/main.css")
         title Simulador de Crédito compensar
         <!-- Google Tag Manager -->
@@ -30,6 +30,7 @@ html(lang="es")
                         include includes/controls.pug
                     div(class="col-lg-7 col-md-12 col-sm-12")
                         include includes/card-credit.pug
-        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa")   
-        script(src="./js/main.js") 
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous")   
+        script(src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js") 
+        script(type="module" src="./js/main.js") 
         include includes/footer.pug
