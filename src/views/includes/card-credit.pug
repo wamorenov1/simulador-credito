@@ -1,24 +1,23 @@
-- var mensaje = "Esto es una tabla de 3x2"
 div(class="card-results")
     div(class="card-credit row")
         div(class="card-title col-md-6")
             h3 Crédito de libre inversión
             p Cuota mensual aproximada 
-            span(class="card-value" id="card-value") $ 830.000
+            span(class="card-value" id="card-cuota") $ 830.000
         div(class="card-data col-md-6")
             div(class="table")
                 div(class="row-table")
                     div(class="cell") A cuantos meses
-                    div(class="cell cell-bold") 12 Meses
+                    div(class="cell cell-bold" id="card-meses") 12 Meses
                 div(class="row-table")
                     div(class="cell") Tasa mensual
-                    div(class="cell cell-bold") 1.5%
+                    div(class="cell cell-bold" id="card-tasa") 1.5%
                 div(class="row-table")
                     div(class="cell") Valor cuota sin seguro
-                    div(class="cell cell-bold") $ 825.000
+                    div(class="cell cell-bold" id="card-cuota-sin") $ 825.000
                 div(class="row-table")
                     div(class="cell") Valor seguro
-                    div(class="cell cell-bold") $ 5.000
+                    div(class="cell cell-bold" id="card-seguro") $ 5.000
         div(class="card-credit-buttons")
             a(href="", class="btn btn-orange") Solicitar crédito
             a(href="", class="credit-enlace") Ver plan de pagos

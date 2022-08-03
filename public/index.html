@@ -47,12 +47,7 @@
               <form class="form">
                 <div class="form-group">
                   <label for="linea-credito">Selecciona la línea de crédito</label>
-                  <select class="form-select" type="text" name="linea-credito" id="linea-credito">
-                    <option>Libre inversión</option>
-                    <option>Educación</option>
-                    <option>Salud</option>
-                    <option>Turismo</option>
-                  </select>
+                  <select class="form-select" type="text" name="linea-credito" id="linea-credito"></select>
                 </div>
                 <div class="form-group">
                   <label for="monto">Preaprobado: <span id="monto-num"> </span></label>
@@ -64,13 +59,7 @@
                   <input class="form-control" type="text" id="meses">
                   <input class="form-range" type="range" min="0" max="100" step="1" id="meses-range">
                   <div class="meses-count">
-                    <ul>
-                      <li>12</li>
-                      <li>24</li>
-                      <li>36</li>
-                      <li>48</li>
-                      <li>60</li>
-                    </ul>
+                    <ul id="list-meses"></ul>
                   </div>
                 </div>
                 <div class="form-group flex-center py-4">
@@ -84,25 +73,25 @@
               <div class="card-credit row">
                 <div class="card-title col-md-6">
                   <h3>Crédito de libre inversión</h3>
-                  <p>Cuota mensual aproximada </p><span class="card-value" id="card-value">$ 830.000</span>
+                  <p>Cuota mensual aproximada </p><span class="card-value" id="card-cuota">$ 830.000</span>
                 </div>
                 <div class="card-data col-md-6">
                   <div class="table">
                     <div class="row-table">
                       <div class="cell">A cuantos meses</div>
-                      <div class="cell cell-bold">12 Meses</div>
+                      <div class="cell cell-bold" id="card-meses">12 Meses</div>
                     </div>
                     <div class="row-table">
                       <div class="cell">Tasa mensual</div>
-                      <div class="cell cell-bold">1.5%</div>
+                      <div class="cell cell-bold" id="card-tasa">1.5%</div>
                     </div>
                     <div class="row-table">
                       <div class="cell">Valor cuota sin seguro</div>
-                      <div class="cell cell-bold">$ 825.000</div>
+                      <div class="cell cell-bold" id="card-cuota-sin">$ 825.000</div>
                     </div>
                     <div class="row-table">
                       <div class="cell">Valor seguro</div>
-                      <div class="cell cell-bold">$ 5.000</div>
+                      <div class="cell cell-bold" id="card-seguro">$ 5.000</div>
                     </div>
                   </div>
                 </div>

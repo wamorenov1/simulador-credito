@@ -30,15 +30,6 @@ gulp.task('imageop', () => {
     .pipe(gulp.dest('./public/images'))
 })
 
-gulp.task('babel', () => {
-    return gulp.src('./src/js/*')
-    .pipe(babel({
-        presets: ['@babel/env']
-    }
-    ))
-    .pipe(gulp.dest('./public/js'))
-})
-
 gulp.task('default', () => {
     gulp.watch('./src/views/**/*.pug', gulp.series('views'))
     gulp.watch('./src/scss/**/*.scss', gulp.series('styles'))

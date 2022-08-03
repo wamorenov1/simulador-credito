@@ -81,4 +81,8 @@
         flex-direction: column;
         gap: $sp-16;
     }
+    .card-credit-button {
+        display: flex;
+        justify-content: center;
+    }
 }
