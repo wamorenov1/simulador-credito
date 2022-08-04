@@ -1,0 +1,13 @@
+.payment-plan__box {
+    table thead {
+        th {
+            background-color: $orange-300;
+            font-weight: 400;
+            color: $white;
+            text-align: center;
+        }
+    }
+    th {
+        font-weight: 300;
+    }
+}

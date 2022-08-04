@@ -6,7 +6,7 @@
         background-color: $orange-300;
         text-align: center;
         color: $white;
-        padding: $sp-16 0rem;
+        padding: $sp-16 1rem;
         border-radius: 15px 15px 0px 0px;
         margin-bottom: $sp-32;
         h2{
@@ -20,7 +20,7 @@
     padding: $sp-8 $sp-32;
     label {
         font-size: $sp-16 + .25;
-        line-height: 18.75px;
+        line-height: 1.6;
         margin-bottom: $sp-16;
         font-weight: 300;
     }

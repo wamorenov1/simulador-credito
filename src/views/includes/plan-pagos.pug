@@ -1,0 +1,26 @@
+mixin row(numero, capital, intereses, seguros, otros, valorCuota)   
+        tr
+            th=numero
+            th=capital
+            th=intereses
+            th=seguros
+            th=otros
+            th=valorCuota
+
+div(class="payment-plan__box py-3 px-2 text-center d-none" id="tabla-pagos")
+    table(class="table table-bordered")
+        thead 
+            tr 
+                th # Cuota
+                th Capital 
+                th Intereses
+                th Seguros
+                th Otros
+                th Valor cuota
+        tbody
+            +row("1", "700.000", "2.500", "5.000","-", "707.500")
+            +row("2", "700.000", "2.500", "5.000","-", "707.500")
+            +row("3", "700.000", "2.500", "5.000","-", "707.500")
+            +row("4", "700.000", "2.500", "5.000","-", "707.500")
+            +row("5", "700.000", "2.500", "5.000","-", "707.500")
+            +row("6", "700.000", "2.500", "5.000","-", "707.500")

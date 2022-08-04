@@ -29,19 +29,19 @@ const data = [{
 },
 {
     id: 2,
-    nameline: "Vivienda",
+    nameline: "Turismo",
     yearRate: 22,
     montRate: 1.8,
     policy: 5000,
     minterm: 12,
-    maxTerm: 48,
+    maxTerm: 60,
     step: 100000,
-    preaprobado: 150000000,
+    preaprobado: 15000000,
     minmonto: 1000000
 },
 {
     id: 3,
-    nameline: "Otro",
+    nameline: "Compra de cartera",
     yearRate: 22,
     montRate: 1.8,
     policy: 5000,
@@ -96,10 +96,10 @@ const createListMonth = (data, index) => {
 }
 //Escuchar valor de los inputs preaprobado
 inputPreaprobado.addEventListener('input', function(e) {
-    rangePreaprobado.value = e.target.value
+    rangePreaprobado.value = parseInt(e.target.value).toLocaleString("es-CO")
 })
 rangePreaprobado.addEventListener('input', function(e) {
-    inputPreaprobado.value = e.target.value
+    inputPreaprobado.value = parseInt(e.target.value).toLocaleString("es-CO")
 })
 //Escuchar valor de los inputs meses
 inputMeses.addEventListener('input', function(e) {
@@ -115,7 +115,7 @@ const printControlsData = (data, index) => {
     let minmonto = data[index].minmonto
     let minterm = data[index].minterm
     messagePreaprobado.innerHTML = `$ ${parseInt(monto).toLocaleString("es-CO")}`
-    inputPreaprobado.value = monto
+    inputPreaprobado.value = parseInt(monto).toLocaleString("es-CO")
     inputMeses.value = meses
     rangePreaprobadoConfig(rangePreaprobado, minmonto, monto, 1000000)
     rangeMesesConfig(rangeMeses, minterm, meses, 12)
@@ -125,8 +125,12 @@ printControlsData(data,findIndex())
 
 const calculateSimulator = (data, i) => {
     let infoMonto = inputPreaprobado.value
+    const replace = (x) => {
+        return x.replace(/\./g, '')
+    }
+    let infoMontoParse = parseInt(replace(infoMonto))
     let infoMeses = inputMeses.value
-    let formula = Math.round(infoMonto / infoMeses + ((infoMonto / infoMeses) * (data[i].montRate / 100)) + data[i].policy)
+    let formula = Math.round(infoMontoParse / infoMeses + ((infoMontoParse / infoMeses) * (data[i].montRate / 100)) + data[i].policy)
     return formula
 }
 
@@ -146,15 +150,13 @@ lineaCredito.addEventListener('change', function(){
     printCardData(data, findIndex())
 })
 
+//Botón ver plan de pagos
+let botonPlanPagos = document.querySelector('#plan-pagos')
+let tablaPagos = document.querySelector('#tabla-pagos')
+botonPlanPagos.addEventListener('click', function(){
+    tablaPagos.classList.toggle("d-none")
+})
+
 btnSimular.addEventListener('click', function() {
     printCardData(data, findIndex())
 })
-
-// Formateo numeros
-inputPreaprobado.addEventListener('change', function() {
-    inputPreaprobado.value = parseInt(inputPreaprobado.value)
-})
-rangePreaprobado.addEventListener('change', function() {
-    inputPreaprobado.value = parseInt(inputPreaprobado.value)
-})
-
