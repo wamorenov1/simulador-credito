@@ -1,13 +1,13 @@
 div(class="controls")
     div(class="controls__title")
-        h2 Simular crédito de libre inversión
+        h2 Datos de tu crédito
     form(class="form")
         div(class="form-group")
             label(for="linea-credito") Selecciona la línea de crédito
             select(class="form-select", type="text", name="linea-credito", id="linea-credito")
         div(class="form-group")
-            label(for="monto") Preaprobado: 
-                span(id="monto-num") 
+            label(for="monto") Monto a simular:
+                // span(id="monto-num") 
             input(type="text" class="form-control" id="monto")
             input(type="range" min="0" max="100" step="100000" class="form-range" id="monto-range")
         div(class="form-group")

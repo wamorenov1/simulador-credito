@@ -3,11 +3,10 @@ const sass = require('gulp-sass')(require('sass'));
 const pug = require('gulp-pug');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
-const production = false; 
 
 gulp.task('views', () => {
     return gulp.src('./src/views/*.pug')
-    .pipe(pug({ pretty: production ? false : true }))
+    .pipe(pug({ pretty: true }))
     .pipe(gulp.dest('./public'))
 })
 

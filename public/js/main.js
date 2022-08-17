@@ -1,5 +1,5 @@
 // Espacio Preaprobado
-let messagePreaprobado = document.querySelector('#monto-num')
+// let messagePreaprobado = document.querySelector('#monto-num')
 let inputPreaprobado = document.querySelector('#monto')
 let rangePreaprobado = document.querySelector('#monto-range')
 // Espacio meses
@@ -114,7 +114,7 @@ const printControlsData = (data, index) => {
     let meses = data[index].maxTerm
     let minmonto = data[index].minmonto
     let minterm = data[index].minterm
-    messagePreaprobado.innerHTML = `$ ${parseInt(monto).toLocaleString("es-CO")}`
+    // messagePreaprobado.innerHTML = `$ ${parseInt(monto).toLocaleString("es-CO")}`
     inputPreaprobado.value = parseInt(monto).toLocaleString("es-CO")
     inputMeses.value = meses
     rangePreaprobadoConfig(rangePreaprobado, minmonto, monto, 1000000)
@@ -159,4 +159,5 @@ botonPlanPagos.addEventListener('click', function(){
 
 btnSimular.addEventListener('click', function() {
     printCardData(data, findIndex())
+    tablaPagos.classList.add("d-none")
 })
